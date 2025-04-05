@@ -4,6 +4,9 @@
 	(generator_version "9.0")
 	(uuid "d7492cbc-cd2f-449e-a730-112eb0300ced")
 	(paper "User" 431.8 304.8)
+	(title_block
+		(title "80% Layout keyboard matrix")
+	)
 	(lib_symbols
 		(symbol "Device:D"
 			(pin_numbers
