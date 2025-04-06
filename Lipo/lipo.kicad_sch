@@ -1779,7 +1779,9 @@
 						(type background)
 					)
 				)
-				(pin passive line
+			)
+			(symbol "DMG6968U-7_1_0"
+				(pin bidirectional line
 					(at -11.43 0 0)
 					(length 5.08)
 					(name "S"
@@ -1797,7 +1799,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin bidirectional line
 					(at -11.43 -5.08 0)
 					(length 5.08)
 					(name "G"
@@ -1815,7 +1817,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 12.7 0 180)
 					(length 5.08)
 					(name "D"
@@ -2368,12 +2370,6 @@
 		(uuid "62e82617-8af5-4726-817e-b1333406568d")
 	)
 	(junction
-		(at 46.99 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62edbbca-bf06-47fb-a7a9-2a19181938be")
-	)
-	(junction
 		(at 40.64 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2507,7 +2503,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 146.05) (xy 40.64 146.05)
+			(xy 40.64 146.05) (xy 46.99 146.05)
 		)
 		(stroke
 			(width 0)
@@ -2884,16 +2880,6 @@
 			(type default)
 		)
 		(uuid "79debab4-cf98-418d-8d25-fc7867e76ede")
-	)
-	(wire
-		(pts
-			(xy 48.26 146.05) (xy 46.99 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ba0daf7-fd4c-42ce-84b1-2f54369e55e4")
 	)
 	(wire
 		(pts
@@ -3496,6 +3482,130 @@
 		)
 	)
 	(symbol
+		(lib_id "New_Library:DMG6968U-7")
+		(at 111.76 97.79 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0484a46b-df23-4152-952d-93c5f249de85")
+		(property "Reference" "U1"
+			(at 92.71 96.774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DMG6968U-7"
+			(at 92.71 99.314 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Library:dmg6968U7"
+			(at 111.76 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" "Diodes Inc"
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DMG6968U-7"
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" "12T2027"
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "SOT-23-3"
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" "1843757"
+			(at 111.76 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c212eb8f-47b3-4d85-99e4-baeef31839be")
+		)
+		(pin "3"
+			(uuid "e4119623-dd12-410c-a0e7-1ad3498ce038")
+		)
+		(pin "2"
+			(uuid "e0a2188e-1769-45d9-8007-4fa18f0305fa")
+		)
+		(instances
+			(project ""
+				(path "/ed14fc19-b033-44fb-89d6-fd0fecc646c8"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 49.53 152.4 270)
 		(unit 1)
@@ -3523,7 +3633,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 49.53 152.4 0)
 			(effects
 				(font
@@ -3671,7 +3781,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 148.59 74.93 0)
 			(effects
 				(font
@@ -3804,7 +3914,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Left"
 			(at 52.07 52.07 0)
 			(effects
 				(font
@@ -4010,7 +4120,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 241.3 62.23 0)
 			(effects
 				(font
@@ -4080,7 +4190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 49.53 171.45 0)
 			(effects
 				(font
@@ -4147,7 +4257,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 220.98 62.23 0)
 			(effects
 				(font
@@ -4226,7 +4336,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 167.64 74.93 0)
 			(effects
 				(font
@@ -4296,7 +4406,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 92.71 123.19 0)
 			(effects
 				(font
@@ -4333,130 +4443,6 @@
 			(project "lipo"
 				(path "/ed14fc19-b033-44fb-89d6-fd0fecc646c8"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "New_Library:DMG6968U-7")
-		(at 137.16 97.79 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ccdd1a4-92a9-4290-a401-200d312c33ae")
-		(property "Reference" "U2"
-			(at 143.51 97.1549 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMG6968U-7"
-			(at 143.51 99.6949 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "DMG6968U-7:SOT95P240X110-3N"
-			(at 137.16 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 137.16 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" "Diodes Inc"
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "DMG6968U-7"
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OC_NEWARK" "12T2027"
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "SOT-23-3"
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OC_FARNELL" "1843757"
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f94adff6-55a2-4cc7-a2b5-522e4e8eb67c")
-		)
-		(pin "3"
-			(uuid "f07bbbab-59f3-4912-b4a1-f268dc089a54")
-		)
-		(pin "2"
-			(uuid "0897b14e-ed64-43fd-b6cb-796baece264d")
-		)
-		(instances
-			(project "lipo"
-				(path "/ed14fc19-b033-44fb-89d6-fd0fecc646c8"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -4556,7 +4542,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 49.53 165.1 0)
 			(effects
 				(font
@@ -4621,7 +4607,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 210.82 69.85 0)
 			(effects
 				(font
@@ -4824,7 +4810,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 49.53 158.75 0)
 			(effects
 				(font
@@ -5024,7 +5010,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 49.53 177.8 0)
 			(effects
 				(font
@@ -5058,6 +5044,130 @@
 			(project "lipo"
 				(path "/ed14fc19-b033-44fb-89d6-fd0fecc646c8"
 					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:DMG6968U-7")
+		(at 137.16 97.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c30589cd-1528-4d51-97d3-378e8ec72c26")
+		(property "Reference" "U2"
+			(at 143.51 97.1549 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMG6968U-7"
+			(at 143.51 99.6949 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:dmg6968U7"
+			(at 137.16 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" "Diodes Inc"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DMG6968U-7"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" "12T2027"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "SOT-23-3"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" "1843757"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "39c448be-f9d2-49ac-a37e-e2c0976f5509")
+		)
+		(pin "1"
+			(uuid "21ef546d-7f16-4d5e-83eb-bc7d068bd166")
+		)
+		(pin "3"
+			(uuid "cf7b64cf-d191-481b-9a23-fb1c086a5bb1")
+		)
+		(instances
+			(project ""
+				(path "/ed14fc19-b033-44fb-89d6-fd0fecc646c8"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5166,7 +5276,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 			(at 80.01 113.03 0)
 			(effects
 				(font
@@ -5239,7 +5349,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left"
 			(at 72.39 65.786 90)
 			(effects
 				(font
@@ -5307,7 +5417,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 90.17 48.26 0)
 			(effects
 				(font
@@ -5377,7 +5487,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 49.53 146.05 0)
 			(effects
 				(font
@@ -5445,7 +5555,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_FFC-FPC:Molex_200528-0100_1x10-1MP_P1.00mm_Horizontal"
 			(at 179.07 124.46 0)
 			(effects
 				(font
@@ -5512,130 +5622,6 @@
 		)
 	)
 	(symbol
-		(lib_id "New_Library:DMG6968U-7")
-		(at 111.76 97.79 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f0f110d6-2b5f-4295-9d6a-637526820068")
-		(property "Reference" "U1"
-			(at 105.41 97.1549 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMG6968U-7"
-			(at 105.41 99.6949 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "DMG6968U-7:SOT95P240X110-3N"
-			(at 111.76 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" "Diodes Inc"
-			(at 111.76 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "DMG6968U-7"
-			(at 111.76 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OC_NEWARK" "12T2027"
-			(at 111.76 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "SOT-23-3"
-			(at 111.76 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OC_FARNELL" "1843757"
-			(at 111.76 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a1e6349a-941a-481c-8a60-807d07dc025d")
-		)
-		(pin "3"
-			(uuid "49e6e75d-b9cd-471d-9aa2-db352b8ff692")
-		)
-		(pin "2"
-			(uuid "0beeabcc-8815-4a79-b98d-7acf4f45fd33")
-		)
-		(instances
-			(project ""
-				(path "/ed14fc19-b033-44fb-89d6-fd0fecc646c8"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 107.95 52.07 0)
 		(unit 1)
@@ -5663,7 +5649,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 107.95 52.07 0)
 			(effects
 				(font

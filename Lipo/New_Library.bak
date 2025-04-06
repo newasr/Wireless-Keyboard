@@ -56,7 +56,7 @@
 			)
 		)
 		(property "SUPPLIER" "Diodes Inc"
-			(at 0 0 0)
+			(at -5.08 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -66,7 +66,7 @@
 			)
 		)
 		(property "MPN" "DMG6968U-7"
-			(at 0 0 0)
+			(at -5.08 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -76,7 +76,7 @@
 			)
 		)
 		(property "OC_NEWARK" "12T2027"
-			(at 0 0 0)
+			(at -5.08 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -86,7 +86,7 @@
 			)
 		)
 		(property "PACKAGE" "SOT-23-3"
-			(at 0 0 0)
+			(at -5.08 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -96,7 +96,7 @@
 			)
 		)
 		(property "OC_FARNELL" "1843757"
-			(at 0 0 0)
+			(at -5.08 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -107,8 +107,8 @@
 		)
 		(symbol "DMG6968U-7_0_0"
 			(rectangle
-				(start -12.7 -10.16)
-				(end 12.7 5.08)
+				(start -6.35 5.08)
+				(end 7.62 -10.16)
 				(stroke
 					(width 0.4064)
 					(type default)
@@ -118,7 +118,7 @@
 				)
 			)
 			(pin passive line
-				(at -17.78 0 0)
+				(at -11.43 0 0)
 				(length 5.08)
 				(name "S"
 					(effects
@@ -136,7 +136,7 @@
 				)
 			)
 			(pin power_in line
-				(at -17.78 -5.08 0)
+				(at -11.43 -5.08 0)
 				(length 5.08)
 				(name "G"
 					(effects
@@ -153,8 +153,10 @@
 					)
 				)
 			)
-			(pin output line
-				(at 17.78 0 180)
+		)
+		(symbol "DMG6968U-7_1_0"
+			(pin bidirectional line
+				(at 12.7 0 180)
 				(length 5.08)
 				(name "D"
 					(effects
